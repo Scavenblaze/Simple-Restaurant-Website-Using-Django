@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}About{% endblock title %}
+
+{% block css %}
+    .resto1 {
+        float: right;
+        margin-left: 20px;
+    }
+    .resto2 {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .white_font{
+        color: white;
+    }
+    .about-content h2{
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .about-content {
+        color: aquamarine;
+        margin: 2em auto;
+        width: 70%;
+        padding: 1rem;
+        letter-spacing: 1px;
+    }
+{% endblock css %}
+
+{% block content %}
+    <div class="about-content">
+        <img class="resto1" src="/static/img/resto1.jpg" alt="restaurant img" width="225px">
+        <h2 >About Us</h2>
+        <h3 class="white_font">Welcome to our restaurant!</h3>
+        <p>We are dedicated to providing you with an exceptional dining experience 🍽️🍷,
+        combining delicious food, friendly service, and a warm atmosphere ✨🤗.</p>
+        <p>Our chefs 👨‍🍳👩‍🍳 use only the freshest ingredients to create mouthwatering
+        dishes that will tantalize your taste buds. Whether you're craving pizza, pasta,
+        or a refreshing salad 🍕🍝🥗, we have something for everyone.</p>
+        <img class="resto2" src="/static/img/resto2.jpg" alt="Restaurant image" width="260px">
+        <p>At our restaurant, we believe in the power of good food to bring people
+        together 🍽️😋. Whether you're dining with family, friends, or colleagues 🥳🎉,
+        we promise to make your visit memorable.</p>
+        <p>So come on in and enjoy a meal with us 🤗🤗. We can't wait to serve you!</p>
+    </div>
+{% endblock content %}

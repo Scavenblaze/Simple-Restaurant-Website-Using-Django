@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block title %}Menu{% endblock title %}
+{% block content %}
+<section class="menu">
+    <h2>Menu</h2>
+    <p>Our menu is created with the freshest ingredients,
+    and we offer a variety of options to suit every taste.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Menu Items</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Breakfast -->
+            <tr>
+                <td class="bold" rowspan="4">Breakfast</td>
+                <td>Classic Omelette</td>
+                <td class="price_highlight">$8.99</td>
+            </tr>
+            <tr>
+                <td>French Toast with Berries</td>
+                <td class="price_highlight">$7.49</td>
+            </tr>
+            <tr>
+                <td>Belgian Waffles</td>
+                <td class="price_highlight">$9.99</td>
+            </tr>
+            <tr>
+                <td>Granola Parfait</td>
+                <td class="price_highlight">$6.99</td>
+            </tr>
+            
+            <!-- Lunch -->
+            <tr>
+                <td class="bold" rowspan="4">Lunch</td>
+                <td>Quinoa Salad</td>
+                <td class="price_highlight">$10.99</td>
+            </tr>
+            <tr>
+                <td>Veggie Wrap</td>
+                <td class="price_highlight">$9.49</td>
+            </tr>
+            <tr>
+                <td>Grilled Cheese Sandwich</td>
+                <td class="price_highlight">$8.99</td>
+            </tr>
+            <tr>
+                <td>Shrimp Tacos</td>
+                <td class="price_highlight">$12.99</td>
+            </tr>
+            
+            <!-- Dinner -->
+            <tr>
+                <td class="bold" rowspan="4">Dinner</td>
+                <td>Seafood Paella</td>
+                <td class="price_highlight">$15.99</td>
+            </tr>
+            <tr>
+                <td>Beef Stir-Fry</td>
+                <td class="price_highlight">$12.99</td>
+            </tr>
+            <tr>
+                <td>Vegetable Lasagna</td>
+                <td class="price_highlight">$11.49</td>
+            </tr>
+            <tr>
+                <td>Teriyaki Salmon</td>
+                <td class="price_highlight">$14.99</td>
+            </tr>
+            
+            <!-- Dessert -->
+            <tr>
+                <td class="bold" rowspan="4">Dessert</td>
+                <td>Apple Pie</td>
+                <td class="price_highlight">$6.99</td>
+            </tr>
+            <tr>
+                <td>Crème Brûlée</td>
+                <td class="price_highlight">$8.49</td>
+            </tr>
+            <tr>
+                <td>Red Velvet Cake</td>
+                <td class="price_highlight">$7.99</td>
+            </tr>
+            <tr>
+                <td>Mango Sorbet</td>
+                <td class="price_highlight">$5.99</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </section>
+    <section id="special-offer">
+        <h2>Special Offer</h2>
+        <marquee behavior="scroll" direction="left" scrollamount="10"  class="m_width">
+            <p style="color: #b54734; font-weight: bold;">Get 20% off on all orders placed on our Website before 5 PM!</p>
+        </marquee>
+    </section>
+    <section id="contact">
+    <div>
+    <h2>Contact Us</h2>
+    <p>For any Query, call: 123-456-7890</p>
+    </div>
+    <a href="{% url "form" %}"><button class="btn btn_menu"> Book now</button></a>
+    </section>
+{% endblock content %}
